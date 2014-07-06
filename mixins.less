@@ -29,6 +29,18 @@
    margin-left: -(@width * 0.5);
 }
 
+// Makes a square
+.square(@dimension) {
+   width: @dimension;
+   height: @dimension;
+}
+
+// Makes a circle
+.circle(@dimension) {
+   width: @dimension;
+   height: @dimension;
+   border-radius: (@dimension/2);
+}
 
 // Hides Text, replaces -9999px hack
 .hide-text {
@@ -37,8 +49,12 @@
    overflow: hidden;
 }
 
-
 // All Caps
 .caps {
    text-transform: uppercase;
+}
+
+// Bold
+.bold {
+   font-weight: bold;
 }
