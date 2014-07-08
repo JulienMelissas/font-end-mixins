@@ -17,6 +17,11 @@
    }
 }
 
+// Fixall for wonkyness with transitions in Chrome and Webkit browsers
+.webkit-translate3d-fix {
+  -webkit-transform: translate3d( 0, 0, 0);
+}
+
 
 // Centers Something inside an absolute or relative positioned element
 .center (@width, @height) {
